@@ -1,4 +1,14 @@
 <template lang="pug">
   div
-    p /users/_id.vue
+    p User ID: {{userId}}
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      userId: this.$route.params.id
+    }
+  }
+}
+</script>
